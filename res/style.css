@@ -5,14 +5,12 @@
 
 @font-face {
   font-family: font-regular;
-  src: url("./fonts/Raleway-Regular.ttf") url("./fonts/Raleway-Regular.otf")
-  url("./fonts/Raleway-Regular.woff2") url("./fonts/Raleway-Regular.eot") url("./fonts/Raleway-Regular.woff");
+  src: url("./fonts/Raleway-Regular.ttf");
 }
 
 @font-face {
   font-family: font-bol;
-  src: url("./fonts/Raleway-Bold.ttf") url("./fonts/Raleway-Bold.otf")
-  url("./fonts/Raleway-Bold.woff") url("./fonts/Raleway-Bold.woff2");
+  src: url("./fonts/Raleway-Bold.ttf");
 }
 
 body {
