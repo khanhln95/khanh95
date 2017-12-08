@@ -6,11 +6,20 @@
 @font-face {
   font-family: font-regular;
   src: url("./fonts/Raleway-Regular.ttf");
+  src: local('☺'),
+  url("./fonts/Raleway-Regular.woff") format('woff'),
+  url("./fonts/Raleway-Regular.eot") format('eot'),
+  url("./fonts/Raleway-Regular.otf") format('otf'),
+  url("./fonts/Raleway-Regular.woff2") format('woff2');
 }
 
 @font-face {
   font-family: font-bol;
   src: url("./fonts/Raleway-Bold.ttf");
+  src: local('☺'),
+  url("./fonts/Raleway-Bold.woff") format('woff'),
+  url("./fonts/Raleway-Bold.otf") format('otf'), 
+  url("./fonts/Raleway-Bold.woff2") format('woff2');
 }
 
 body {
