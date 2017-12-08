@@ -655,11 +655,47 @@
   </div>
   <div id="advertise">
     <div class="container">
-      <div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./res/img/qc.jpg"></a></div>
-      <div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./res/img/qc1.jpg"></a></div>
-      <div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./res/img/qc2.jpg"></a></div>
-      <div class="col-xs-12 col-sm-6 col-md-3 img-qc"><a href="#"><img src="./res/img/qc3.jpg"></a></div>
+      <div class="col-xs-12 col-sm-12 col-md-12 img-qc">
+        <div class="owl-carousel owl-theme owl-adv">
+          <a href="#"><img src="./res/img/qc.jpg"></a>
+          <a href="#"><img src="./res/img/qc1.jpg"></a>
+          <a href="#"><img src="./res/img/qc2.jpg"></a>
+          <a href="#"><img src="./res/img/qc3.jpg"></a>
+        </div>
+      </div>
+      <script>
+        $(document).ready(function() {
+          $('.owl-adv').owlCarousel({
+            loop: true,
+            margin: 50,
+            nav: false,
+            dots: false,
+            // autoWidth: true,
+            responsive: {
+              0: {
+                items: 1
+              },
+              400: {
+                items: 2
+              },
+              600: {
+                items: 3
+              },
+              992: {
+                items: 3
+              },
+              1000: {
+                items: 4
+              }
+            }
+          })
+        })
+      </script>
+      <!-- <div class="col-xs-12 col-sm-12 col-md-12 img-qc"><a href="#"><img src="./res/img/qc1.jpg"></a></div>
+      <div class="col-xs-12 col-sm-12 col-md-12 img-qc"><a href="#"><img src="./res/img/qc2.jpg"></a></div>
+      <div class="col-xs-12 col-sm-12 col-md-12 img-qc"><a href="#"><img src="./res/img/qc3.jpg"></a></div> -->
     </div>
+
   </div>
   <div id="footer-cont">
     <div class="container">
