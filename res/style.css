@@ -10,6 +10,7 @@
   url("./fonts/Raleway-Regular.woff") format('woff'),
   url("./fonts/Raleway-Regular.eot") format('eot'),
   url("./fonts/Raleway-Regular.otf") format('otf'),
+  url("./fonts/Raleway-Regular.otf") format('svg'),
   url("./fonts/Raleway-Regular.woff2") format('woff2');
 }
 
@@ -18,7 +19,9 @@
   src: url("./fonts/Raleway-Bold.ttf");
   src: local('☺'),
   url("./fonts/Raleway-Bold.woff") format('woff'),
-  url("./fonts/Raleway-Bold.otf") format('otf'), 
+  url("./fonts/Raleway-Bold.eot") format('eot'),
+  url("./fonts/Raleway-Bold.svg") format('svg'),
+  url("./fonts/Raleway-Bold.otf") format('otf'),
   url("./fonts/Raleway-Bold.woff2") format('woff2');
 }
 
@@ -356,7 +359,7 @@ header {
   margin-top: 5px;
 }
 
-#mid-content .list-clothing .img-sp .saler .rate, #mid-content .list-bag .img-sp .saler .rate {
+#mid-content .list-clothing .img-sp .saler .rate, #mid-content .list-bag .img-sp .saler .rate, #mid-content .sell .img-sp .saler .rate {
   position: absolute;
   padding: 10px;
   background-color: #fff;
@@ -364,7 +367,7 @@ header {
   font-size: 14px;
   float: left;
   margin-top: 520%;
-  margin-left: 404%;
+  margin-left: 420%;
 }
 
 #mid-content .list-clothing .img-sp .hover, #mid-content .list-bag .img-sp .hover {
@@ -399,12 +402,17 @@ header {
   margin-bottom: 10px;
   border-bottom: 1px solid #d9d9d9;
 }
-
+.owl-clothing .owl-nav.disabled .owl-prev, .owl-clothing .owl-nav.disabled .owl-next, .owl-bestSeller .owl-nav.disabled .owl-prev, .owl-bestSeller .owl-nav.disabled .owl-next, .owl-bag .owl-nav .owl-prev, .owl-bag .owl-nav .owl-next, .owl-blog .owl-nav.disabled .owl-prev, .owl-blog .owl-nav.disabled .owl-next {
+  color: #000;
+  background-color: #fff;
+}
 #mid-content .list-clothing .cost, #mid-content .list-bag .cost {
   font-family: font-bol;
   color: red;
 }
-
+.list-bag .owl-nav.disabled, .img-qc .owl-nav.disabled {
+  display: none;
+}
 #mid-content .list-clothing .cost span, #mid-content .list-bag .cost span {
   font-family: font-regular;
   margin-left: 10px;
@@ -503,17 +511,6 @@ header {
   /*margin-top: 5px;*/
 }
 
-#mid-content .sell .img-sp .saler .rate {
-  display: none;
-  position: absolute;
-  padding: 10px;
-  background-color: #fff;
-  color: black;
-  font-size: 14px;
-  float: left;
-  margin-top: 520%;
-  margin-left: 430%;
-}
 
 #mid-content .sell .img-sp .hover {
   position: absolute;
@@ -935,4 +932,8 @@ footer .footer-logo img {
   width: 100%;
   height: auto;
   float: left;
+}
+#mid-content .list-clothing .owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
 }
