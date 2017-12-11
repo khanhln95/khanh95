@@ -154,7 +154,7 @@
           <p class="mid-title">clothings</p>
           <div class="clean"></div>
         </div>
-        <div class="col-xs-12 col-md-6 bn-jacket">
+        <div class="col-xs-12 col-sm-12 col-md-6 bn-jacket">
 
           <div class="img-jacket">
             <div class="jacket">
@@ -165,7 +165,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 list-clothing">
+        <div class="col-xs-12 col-sm-12 col-md-6 list-clothing">
           <div class="owl-carousel owl-theme owl-clothing">
             <div class="item">
               <div class="img-sp">
@@ -244,29 +244,35 @@
               </div>
             </div>
           </div>
-          <script>
-            $(document).ready(function() {
-              $('.owl-clothing').owlCarousel({
-                loop: true,
-                margin: 10,
-                // autoWidth: true,
-                nav: true,
-                // center: true,
-                responsive: {
-                  0: {
-                    items: 1
-                  },
-                  400: {
-                    items: 2
-                  },
-                }
-              })
-            })
-          </script>
+
         </div>
+        <script>
+          $(document).ready(function() {
+            $('.owl-clothing').owlCarousel({
+              loop: true,
+              margin: 10,
+              nav: true,
+              dots: false,
+              navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+              responsive: {
+                0: {
+                  items: 1,
+                },
+                400: {
+                  items: 2,
+                },
+                1200: {
+                  items: 2,
+                }
+              }
+            })
+          })
+        </script>
 
       </div>
+
     </div>
+
   </div>
 
   <div id="mid-content">
@@ -359,9 +365,7 @@
             $('.owl-shoe').owlCarousel({
               loop: true,
               margin: 10,
-              nav: false,
               dots: false,
-              // autoWidth: true,
               responsive: {
                 0: {
                   items: 1
@@ -375,7 +379,7 @@
         </script>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 bn-bag">
-        <div>
+        <div class="owl-carousel owl-theme owl-bag">
           <div class="item">
             <div class="img-bag">
               <div class="jacket">
@@ -386,8 +390,39 @@
               </div>
             </div>
           </div>
+          <div class="item">
+            <div class="img-jacket">
+              <div class="jacket">
+                <p class="img-title">handbags sale</p>
+                <p>-</p>
+                <p class="img-content">Criminal Damage Shorts in Mesh with Stripe Denim Shorts In Slim Print</p>
+                <button type="button">SHOP  COLLECTION</button>
+              </div>
+            </div>
+          </div>
         </div>
+        <script>
+          $(document).ready(function() {
+            $('.owl-bag').owlCarousel({
+              loop: true,
+              margin: 10,
+              navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+              dots: false,
+              responsive: {
+                0: {
+                  items: 1,
+                  nav: true
+                },
+          1000: {
+            items: 1,
+            nav: true
+          }
+              }
+            })
+          })
+        </script>
       </div>
+
     </div>
   </div>
   </div>
@@ -540,35 +575,41 @@
             </div>
           </div>
 
-          <script>
-            $(document).ready(function() {
-              $('.owl-bestSeller').owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: false,
-                dots: false,
-                autoWidth: true,
-                responsive: {
-                  0: {
-                    items: 1
-                  },
-                  400: {
-                    items: 2
-                  },
-                  600: {
-                    items: 3
-                  },
-                  992: {
-                    items: 4
-                  },
-                  1000: {
-                    items: 5
-                  }
-                }
-              })
-            })
-          </script>
+
         </div>
+        <script>
+          $(document).ready(function() {
+            $('.owl-bestSeller').owlCarousel({
+              loop: true,
+              margin: 10,
+              // nav: true,
+              navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+              dots: false,
+              responsive: {
+                0: {
+                  items: 1,
+                  nav: true
+                },
+                400: {
+                  items: 2,
+                  nav: true
+                },
+                600: {
+                  items: 3,
+                  nav: true
+                },
+                992: {
+                  items: 4,
+                  nav: true
+                },
+                1200: {
+                  items: 5,
+                  nav: true
+                }
+              }
+            })
+          })
+        </script>
       </div>
 
     </div>
@@ -627,9 +668,9 @@
             $('.owl-blog').owlCarousel({
               loop: true,
               margin: 10,
-              nav: false,
+              nav: true,
+              navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
               dots: false,
-              autoWidth: true,
               responsive: {
                 0: {
                   items: 1
@@ -638,10 +679,10 @@
                   items: 1
                 },
                 600: {
-                  items: 1
+                  items: 2
                 },
                 992: {
-                  items: 2
+                  items: 3
                 },
                 1000: {
                   items: 3
